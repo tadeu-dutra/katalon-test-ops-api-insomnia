@@ -2,7 +2,21 @@
 
 This project is a CI/CD automation example focused on interacting with the **Katalon TestOps API**. It uses the [Insomnia CLI (Inso)](https://developer.konghq.com) and [GitHub Actions](https://docs.github.com) to run automated API regression tests.
 
-For the sake of simplicity and demonstration, this implementation specifically focuses on using **GET requests** to retrieve data from various TestOps endpoints (e.g., fetching teams, projects, test results).
+For the sake of simplicity and demonstration, this implementation specifically focuses on using **GET requests** to retrieve data from various TestOps endpoints (e.g., fetching teams, projects, test results). Here is a list of the insomnia requests:
+
+- Get all teams
+- Get all projects
+- Get a team
+- Get a project
+- Get a test result
+- Get a test suite
+- Get a test case
+- Get test runs
+- Download files
+- Export and download a test run
+
+See full spec here: https://developers.katalon.com/reference/testops-api-documentation
+
 
 The workflow checks out the repository, installs the `inso` CLI, injects necessary secrets from the GitHub repository settings, and executes the requests defined in the `TestOps_API_Collection.yaml` file.
 
