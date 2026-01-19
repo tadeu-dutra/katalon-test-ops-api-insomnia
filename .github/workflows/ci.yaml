@@ -1,0 +1,38 @@
+name: Katalon Test Ops API Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: MY_ENVIRONMENT
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Inso CLI
+        uses: kong/setup-inso@v2
+        with:
+          inso-version: '11.3.0'
+
+      - name: Run API Collection
+        run: |
+          inso run collection "TestOps API Collection" \
+            --workingDir ./TestOps_API_Collection.yaml \
+            --env "MY_ENVIRONMENT" \
+            --env-var "BASE_URL=${{ secrets.BASE_URL }}" \
+            --env-var "USERNAME=${{ secrets.USERNAME }}" \
+            --env-var "PASSWORD=${{ secrets.PASSWORD }}"  \
+            --env-var "TEAM_ID=${{ secrets.TEAM_ID }}" \
+            --env-var "PROJECT_ID=${{ secrets.PROJECT_ID }}" \
+            --env-var "TEST_RESULT_ID=${{ secrets.TEST_RESULT_ID }}" \
+            --env-var "TEST_SUITE_ID=${{ secrets.TEST_SUITE_ID }}" \
+            --env-var "TEST_CASE_ID=${{ secrets.TEST_CASE_ID }}" \
+            --env-var "ORDER_ID=${{ secrets.ORDER_ID }}" \
+            --env-var "EXECUTION_ID=${{ secrets.EXECUTION_ID }}" \
+            --env-var "EXPORT_TYPE=${{ secrets.EXPORT_TYPE }}"

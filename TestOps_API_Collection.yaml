@@ -1,0 +1,384 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: TestOps API Collection
+meta:
+  id: wrk_a8857067d00a4675baaf76de535a03c3
+  created: 1768582651091
+  modified: 1768584646182
+  description: ""
+collection:
+  - url: "{{ _.BASE_URL }}/teams"
+    name: Get all teams
+    meta:
+      id: req_b6739d057e8b4461ab85695bee84418f
+      created: 1768582661128
+      modified: 1768750757937
+      isPrivate: false
+      description: ""
+      sortKey: -1768582661128
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/teams/{{ _.TEAM_ID }}"
+    name: Get a team
+    meta:
+      id: req_68a15987bb9c4ce2a3f838aba619d16f
+      created: 1768585083386
+      modified: 1768750737368
+      isPrivate: false
+      description: ""
+      sortKey: -1768378226282.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/projects"
+    name: Get all projects
+    meta:
+      id: req_e97b006f0abc48d482ef639baed49b27
+      created: 1768585166105
+      modified: 1768750747413
+      isPrivate: false
+      description: ""
+      sortKey: -1768480443705.25
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/projects/"
+    name: Get a project
+    meta:
+      id: req_f8dec3a66fc745608c76545b85423af3
+      created: 1768585184847
+      modified: 1768750794841
+      isPrivate: false
+      description: ""
+      sortKey: -1768378226082.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/test-results/{{ _.TEST_RESULT_ID }}"
+    name: Get a test result
+    meta:
+      id: req_d7a64f404d3d47138691824a404711fa
+      created: 1768585517569
+      modified: 1768751503672
+      isPrivate: false
+      description: ""
+      sortKey: -1768276008759.75
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/test-suites/{{ _.TEST_SUITE_ID }}"
+    name: Get a test suite
+    meta:
+      id: req_639561f761c44c11ba073316ff942d4a
+      created: 1768585595427
+      modified: 1768751579307
+      isPrivate: false
+      description: ""
+      sortKey: -1768224900098.375
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/test-cases/{{ _.TEST_CASE_ID }}"
+    name: Get a test case
+    meta:
+      id: req_5633cb6646d44eb98146cd7fb16c0cde
+      created: 1768585734204
+      modified: 1768751653554
+      isPrivate: false
+      description: ""
+      sortKey: -1768199345767.6875
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/executions?projectId={{ _.PROJECT_ID }}&order={{
+      _.ORDER_ID }}"
+    name: Get test runs
+    meta:
+      id: req_b0531270c809432db9e4def69a681976
+      created: 1768586142938
+      modified: 1768751747884
+      isPrivate: false
+      description: ""
+      sortKey: -1768199345667.6875
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/executions/{{ _.EXECUTION_ID }}/download-file"
+    name: Download files
+    meta:
+      id: req_ea8c1e0f32de49d195bdc2d0ce8c17f8
+      created: 1768586561282
+      modified: 1768751900013
+      isPrivate: false
+      description: ""
+      sortKey: -1768186568552.3438
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.BASE_URL }}/executions/{{ _.EXECUTION_ID }}/export?fileType={{
+      _.EXPORT_TYPE }}"
+    name: Export and download a test run
+    meta:
+      id: req_72c8eabaa6fd47328f91bf7b851e4da7
+      created: 1768588040606
+      modified: 1768756523956
+      isPrivate: false
+      description: ""
+      sortKey: -1768180179994.6719
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.0
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    authentication:
+      type: basic
+      useISO88591: false
+      username: "{{ _.USERNAME }}"
+      password: "{{ _.PASSWORD }}"
+      disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_79221cd661b4947089277fd2adf355cc75cd81c1
+    created: 1768582651115
+    modified: 1768773149750
+  cookies:
+    - id: 75a40553-33d2-45af-8f74-f9ccf00ee40e
+      key: segment-write-key
+      value: WxwQoaB6jHOmAdkzEQPxwJLSwPOVo2bX
+      domain: testops.katalon.io
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_79221cd661b4947089277fd2adf355cc75cd81c1
+    created: 1768582651110
+    modified: 1768791427680
+    isPrivate: false
+  subEnvironments:
+    - name: MY_ENVIRONMENT
+      meta:
+        id: env_013286fd940647dab21ae3caadb57ed4
+        created: 1768751123888
+        modified: 1768791386457
+        isPrivate: false
+        sortKey: 1768750837593
+      data:
+        BASE_URL: ""
+        USERNAME: ""
+        PASSWORD: ""
+        TEAM_ID: ""
+        PROJECT_ID: ""
+        TEST_RESULT_ID: ""
+        TEST_SUITE_ID: ""
+        TEST_CASE_ID: ""
+        ORDER_ID: ""
+        EXECUTION_ID: ""
+        EXPORT_TYPE: ""
+
