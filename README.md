@@ -1,4 +1,4 @@
-# API Tests: Katalon TestOps Collection
+# API Tests: Katalon TestOps Sample Collection
 
 This project is a CI/CD automation example focused on interacting with the **Katalon TestOps API**. It uses the [Insomnia CLI (Inso)](https://developer.konghq.com) and [GitHub Actions](https://docs.github.com) to run automated API regression tests.
 
